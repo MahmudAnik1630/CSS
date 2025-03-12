@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(53, 113, 145);
+        }
+        .contract{
+            width: 80%;
+            border: 1px solid #ddd ;
+            margin: 20px auto;
+            padding: 5%;
+            text-align: center;
+        }
+        .contract h2{
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: 0px;
+        }
+        .contract p{
+            color: rgb(41, 41, 41);
+        }
+
+        .contract form{
+            margin-top: 25px;
+        }
+         
+        .child_form{
+
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .child_form label{
+            display: block;
+            text-align: left;
+    
+            margin-bottom: 5px;
+        }
+
+        .child_form input , .child_form textarea,.contract form select{
+
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 94%;
+            padding: 10px 3%; 
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .child_form:last-child{
+            margin-bottom: 0;
+        }
+
+        .child_form input[type="button"]{
+            background-color: rgb(22, 57, 71);
+            color: white;
+            border-color: rgb(15, 2, 27);
+            width: 20%;
+
+        }
+        .child_form input[type="button"]:hover{
+            background-color: rgb(5, 1, 9);
+            color: white;
+            cursor: pointer;
+           
+        }
+        .contract form select{
+            width: 100%;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contract">
+    <h2>Level Up Your Brand</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quo.</p>
+
+    <div class="child_form">
+    <form action="">
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+
+        <label for="email">Enter Your Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+
+        <label for="Country">Country</label>
+        <select name="Country" id="">
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">USA</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">USA</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Bangladesh">USA</option>
+        </select>
+
+        <label for="phone">Enter Your Phone</label>
+        <input type="number" name="phone" id="phone" placeholder="Enter Your Phone">
+
+        <label for="message">How Can We Help</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+
+
+        <div class="button">
+        <input type="button" value="Send Message" >
+    </div>
+        
+    </form>
+</div>
+
+</div>
+</body>
+</html>
