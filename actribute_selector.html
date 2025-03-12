@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+a[target] {
+  text-decoration: none;
+  color: red;
+}
+a[target='_self'] {
+  color: plum;
+}
+a[title~='Hello'] {
+  color: aqua;
+  font-weight: bold;
+  font-size: 35px;
+}
+a[title~='hel'] {
+  color: purple;
+  font-weight: normal;
+  font-size: 25px;
+}
+div[class|='child'] {
+  width: 300px;
+  height: 200px;
+  background: #8c7ae6;
+}
+div[class^='child'] {
+  width: 300px;
+  height: 200px;
+  background: #e1b12c;
+  margin-bottom: 5px;
+}
+div[class$='ial'] {
+  background: #8c7ae6;
+}
+div[class*='erv'] {
+  background: #e84118;
+}
+
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Attribute Selector</title>
+  
+</head>
+
+<body>
+  <a href="#" title="Hello">Hhehe Boy</a>
+  <a href="#" target="_blank">HeheHe boy</a>
+  <a href="#" title="Hel">Hello Boy</a>
+  <a href="#" target="_self">Hello</a>
+  <a href="#">Heh</a>
+
+  <div id="service">
+    <div class="child_service">
+
+    </div>
+    <div class="child-service">
+      <span>Working</span>
+
+    </div>
+  </div>
+
+  <div id="testimonial">
+    <div class="child-testimonial">
+      <span>Working</span>
+    </div>
+    <div class="child_testimonial">
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
